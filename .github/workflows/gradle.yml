@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    outputs:
+      key: 'groovy-language-server-all.jar'
+      
     steps:
       - uses: actions/checkout@v1
       - name: Set up JDK 1.8
